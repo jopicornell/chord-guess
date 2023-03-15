@@ -23,6 +23,8 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install
+      - name: Build project
+        run: yarn build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
